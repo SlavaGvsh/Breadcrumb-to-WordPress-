@@ -1,0 +1,75 @@
+.breadcrumb {
+  margin-bottom: 20px;
+  padding: 0;
+  border-radius: 0;
+}
+.breadcrumb-white .breadcrumb-item:not(:last-child)::after {
+  color: #ffffff;
+}
+.breadcrumb-white .breadcrumb-item a {
+  color: #ffffff;
+}
+.breadcrumb-white .breadcrumb-item a::after {
+  background-color: #ffffff;
+}
+.breadcrumb-white .breadcrumb-item.active span {
+  color: #ffffff;
+}
+.breadcrumb ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 3px;
+  list-style: none;
+  padding: 0;
+  margin: 0 !important;
+}
+.breadcrumb-item {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+@media (max-width: 767px) {
+  .breadcrumb-item {
+    font-size: 12px;
+  }
+}
+.breadcrumb-item:not(:last-child)::after {
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 10px;
+  padding: 0 12px;
+  font-weight: 900;
+}
+@media (max-width: 767px) {
+  .breadcrumb-item:not(:last-child)::after {
+    padding: 0 4px;
+    font-size: 7px;
+  }
+}
+.breadcrumb-item a {
+  text-decoration: none;
+  color: #6a0098;
+  font-weight: 700;
+  position: relative;
+}
+.breadcrumb-item a:hover {
+  opacity: 1;
+}
+.breadcrumb-item a:hover::after {
+  width: 100%;
+}
+.breadcrumb-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #6a0098;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease;
+}
+.breadcrumb-item.active span {
+  color: #666666;
+  font-weight: 400;
+}/*# sourceMappingURL=style.css.map */
